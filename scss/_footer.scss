@@ -1,0 +1,131 @@
+.container-footer {
+    background-color: $primaryColor;
+    color: $branco;
+
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+
+    li + li {
+        margin-top: 20px;
+    }
+
+    a {
+        font-family: $font-p;
+        font-size: 14px;
+        color: $branco;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            color: $color-button;
+        }
+    }
+}
+
+.logo-footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+.telefone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 20px;
+
+    p {
+        font-family: $font-p;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    p {
+        font-family: $font-p;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-right: 150px;
+
+    img {
+        width: 20px;
+    }
+
+    div + div {
+        margin-left: 40px;
+    }
+
+    .rede {
+        padding: 7px;
+
+        border: 1px solid $branco;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+
+        transition: .3s;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-5px)
+        }
+    }
+}
+
+@include responsive(mobile) {
+    .logo-footer {
+        width: 80%;
+        img {
+            width: 40%;
+        }
+    } 
+
+    .informacoes {
+        justify-content: space-between;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .telefone-email {
+        margin-bottom: 60px;
+    }
+
+    .sobre {
+        margin-bottom: 60px;
+    }
+
+    .termos {
+        margin-bottom: 60px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

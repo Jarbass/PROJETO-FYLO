@@ -1,0 +1,31 @@
+// COLORS
+$primaryColor: hsl(243, 87%, 12%);
+$roxoClaro: hsl(238, 22%, 44%);
+$color-button: hsl(224, 93%, 58%);
+$verdeClaro: hsl(170, 45%, 43%);
+$branco: hsl(0, 0%, 100%);
+$cinza: hsl(0, 0%, 75%);
+$bg-color-main: #F8F8FE;
+
+
+// TYPOGRAPHY
+$font-title: 'Raleway', sans-serif; //400, 700
+$font-p: 'Open Sans', sans-serif; //400
+
+
+
+// RESPONSIVE
+$mobile: 450px;
+$desktop: 1300px;
+
+@mixin responsive($tela) {
+    @if $tela == desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    } @else if $tela == mobile {
+        @media screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+}

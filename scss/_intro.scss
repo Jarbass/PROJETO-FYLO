@@ -1,0 +1,149 @@
+.container-intro {
+    width: 100%;
+}
+
+.container-i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.intro {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 70px;
+
+    h2 {
+        font-family: $font-title;
+        font-size: 1.9em;
+        font-weight: 700;
+        color: $primaryColor;
+        letter-spacing: 0.1em;
+        line-height: 35px;
+    }
+
+    p {
+        font-family: $font-p;
+        font-size: 1.1em;
+        color: $primaryColor;
+        letter-spacing: 0.05em;
+        line-height: 23px;
+
+        padding: 20px 0px;
+    }
+
+    input {
+        width: 350px;
+        height: 35px;
+        padding-left: 10px;
+
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    button {
+        font-family: $font-p;
+        font-size: 16px;
+        color: $branco;
+
+        width: 200px;
+        height: 40px;
+        margin-left: 10px;
+
+        border: none;
+        border-radius: 5px;
+
+        background-color: $color-button;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.intro-img {
+    margin-right: 20px;
+    img {
+        width: 100%;
+    }
+}
+
+.links, .icon {
+    display: none;
+}
+
+
+
+
+// VALIDAÇÃO EMAIL (SE DER ERRO)
+.alert::before {
+    content: "Por favor, informe um email válido";
+    color: red;
+    font-family: $font-p;
+    font-size: 12px;
+}
+
+.alert-input {
+    border: 1px solid red;
+}
+
+
+
+// MOBILE 
+
+@include responsive(mobile) {
+    .container-i {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .intro {
+        max-width: 90%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9em;
+            text-align: center;
+            padding: 30px 0px;
+        }
+    }
+
+    .intro-img {
+        margin-right: 10px;
+        margin-bottom: 90px;
+        max-width: 85%;
+    }
+
+    .form-email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            width: 340px;
+            height: 45px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            border: 1px solid;
+        }
+
+        button {
+            width: 350px;
+            height: 45px;
+            margin-left: 0px;
+        }
+    }
+}
+
