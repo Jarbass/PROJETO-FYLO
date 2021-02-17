@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Fylo</title>
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header class="container-header">
+        <div class="container-h">
+            <div class="logo">
+                <img src="imagens/logo.svg" alt="Logo Fylo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="menuMobile()">
+                <img class="menu-mobile" src="imagens/icon-menu.svg" alt="Menu Mobile">
+            </a>
+        </div>    
+        <div class="links" id="links">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="container-intro">
+        <div class="container-i">
+            <div class="intro">
+                <h2>Todos os seus arquivos em um local seguro, acessível em qualquer lugar.</h2>
+                <p>O Fylo armazena seus arquivos mais importantes em um local seguro. Acesse-os sempre que precisar, compartilhe e colabore com amigos, familiares e colegas de trabalho.</p>
+                <div class="form-email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <button name="submit" type="" onclick="verificaEmail()">Clique para Iniciar</button>
+                </div>
+                <span id="alerta"></span>
+            </div>
+            <div class="intro-img">
+                <img src="imagens/illustration-1.svg" alt="Ilustração Arquivos na Pasta">
+            </div>
+        </div>
+    </section>
+    <div class="bg-curvado"></div>
+    <section class="container-main">
+        <div class="main">
+            <h2>Fique produtivo, onde quer que esteja</h2>
+            <p>Nunca deixe a localização ser um problema ao acessar seus arquivos. A Fylo oferece cobertura para todas as suas necessidades de armazenamento de arquivos.</p>
+            <p>Compartilhe arquivos e pastas com segurança com amigos, familiares e colegas para colaboração ao vivo. Não são necessários anexos de e-mail!</p>
+            <span><a href="#">Veja como funciona o Fylo</a><img src="imagens/icon-arrow.svg" alt="Ícone de Seta"></span> 
+
+            <blockquote class="depoimento">
+                <p class="aspas">❝</p>
+                <p>Fylo melhorou a produtividade de nossa equipe em uma ordem de magnitude. Desde a mudança, nossa equipe se tornou uma máquina de colaboração bem lubrificada.</p>
+                <div class="depoimento-pessoa">
+                    <div class="pessoa-img">
+                        <img src="imagens/avatar-testimonial.jpg" alt="Foto da Pessoa">
+                    </div>
+                    <div class="pessoa-info">
+                        <p class="nome">Kyle Burton</p>
+                        <p class="cargo">Fundador & CEO, Huddie</p>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <div class="main-img">
+            <img src="imagens/illustration-2.svg" alt="Ilustração Conversas">
+        </div>
+    </section>
+    <section class="container-email">
+        <div class="text-email">
+            <h2>Obtenha acesso antecipado hoje</h2>
+            <p>A inscrição leva apenas um minuto e nosso nível de iniciante gratuito é extremamente generoso. Se você tiver alguma dúvida, nossa equipe de suporte ficará feliz em ajudá-lo.</p>
+        </div>
+        <div class="input-email">
+            <input type="email" id="email2" name="email2" placeholder="Digite seu email" required>
+            <span id="alerta2"></span>
+            <button name="submit" type="" onclick="verificaEmail2()">Teste Grátis</button>
+        </div>
+    </section>
+    <footer class="container-footer">
+        <div class="logo-footer">
+            <img src="imagens/logo-footer.svg" alt="Logo">
+        </div>
+        <div class="informacoes">
+            <div class="telefone-email">
+                <div class="telefone">
+                    <img src="imagens/icon-phone.svg" alt="Ícone Telefone">
+                    <p>+55 (85)95555-5555</p>
+                </div>
+                <div class="email">
+                    <img src="imagens/icon-email.svg" alt="Ícone Email">
+                    <p>example@fylo.com</p>
+                </div>
+            </div>
+            <div class="sobre">
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Trabalhos</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="termos">
+                <ul>
+                    <li><a href="#">Nos Contate</a></li>
+                    <li><a href="#">Termos</a></li>
+                    <li><a href="#">Privacidades</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <div class="rede facebook"><img src="imagens/icon-facebook.svg" alt="Ícone do Facebook"></div>
+                <div class="rede twitter"><img src="imagens/icon-twitter.svg" alt="Ícone do Twitter"></div>
+                <div class="rede instagram"><img src="imagens/icon-instagram.svg" alt="Ícone do Instagram"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
