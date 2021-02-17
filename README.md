@@ -1,6 +1,8 @@
 # PROJETO-FYLO
 Landing Page desenvolvida de acordo com o desafio no <b>Frontend Mentor</b>.
 
+:exclamation: Fiz uma validação básica usando Javascript para verificar se o email está correto.
+
 ### Desktop / Mobile
 O projeto foi desenvolvido para duas telas, sendo elas: 
 - Desktop: 1300px
