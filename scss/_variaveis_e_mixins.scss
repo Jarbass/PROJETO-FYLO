@@ -16,6 +16,8 @@ $font-p: 'Open Sans', sans-serif; //400
 
 // RESPONSIVE
 $mobile: 450px;
+$ipad: 990px;
+$fluid: 450px;
 $desktop: 1300px;
 
 @mixin responsive($tela) {
@@ -23,8 +25,16 @@ $desktop: 1300px;
         @media screen and (min-width: $desktop) {
             @content;
         }
+    } @else if $tela == ipad {
+        @media screen and (min-width: $ipad) and (max-width: $desktop - 1){
+            @content;
+        }
+    } @else if $tela == fluid {
+        @media screen and (min-width: $fluid) and (max-width: $ipad - 1){
+            @content;
+        }
     } @else if $tela == mobile {
-        @media screen and (max-width: $mobile) {
+        @media screen and (max-width: $mobile){
             @content;
         }
     }

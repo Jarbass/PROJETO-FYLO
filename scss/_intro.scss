@@ -13,7 +13,7 @@
 }
 
 .intro {
-    max-width: 100%;
+    width: 100%;
     margin-left: 20px;
     margin-right: 70px;
 
@@ -78,9 +78,6 @@
     display: none;
 }
 
-
-
-
 // VALIDAÇÃO EMAIL (SE DER ERRO)
 .alert::before {
     content: "Por favor, informe um email válido";
@@ -93,7 +90,13 @@
     border: 1px solid red;
 }
 
-
+//MEDIAS
+@media (max-width: 1280px) {
+    .form-email button {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
 
 // MOBILE 
 
@@ -132,7 +135,7 @@
         justify-content: center;
 
         input {
-            width: 340px;
+            width: 100%;
             height: 45px;
             padding-left: 10px;
             margin-bottom: 20px;
@@ -140,9 +143,65 @@
         }
 
         button {
-            width: 350px;
+            width: 105%;
             height: 45px;
             margin-left: 0px;
+        }
+    }
+}
+
+// IPAD 
+
+@include responsive(ipad) {
+    .form-email button {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .intro-img img {
+        width: 30rem;
+    }
+
+    .intro h2 {
+        font-size: 1.4em;
+    }
+    .intro p {
+        font-size: 0.9em;
+    }
+}
+
+// FLUID
+@include responsive(fluid) {
+    .container-i {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro {
+        width: 90%;
+        margin: 100px auto 50px auto;
+
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+
+        .form-email {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            input {
+                width: 400px;
+            }
+            button {
+                width: 415px;
+                height: 50px;
+            }
         }
     }
 }

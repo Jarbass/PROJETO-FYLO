@@ -129,3 +129,28 @@
         margin: 0 auto;
     }
 }
+
+@include responsive(fluid) {
+    .redes-sociais {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 740px) {
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .telefone-email {
+        margin-bottom: 40px;
+    }
+    .sobre {
+        margin-bottom: 40px;
+    }
+    .termos {
+        margin-bottom: 40px;
+    }
+    .redes-sociais {
+        margin: 0 auto;
+    }
+}
